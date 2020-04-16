@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Dokdo&display=swap');
 
+/*................bodystyle*/
 html {
     height: 100%;
     margin: 0;
@@ -12,11 +13,13 @@ body {
     position: absolute;
     
 }
+/*...............canvasstlye*/
 canvas {
     border: 8px solid black;
     background: lightblue;
     position: absolute;
 }
+/*................headings, logos*/
 .h1 {
     font-family: "Dokdo", Arial, Helvetica, sans-serif;
     color:lightcoral;
@@ -46,5 +49,19 @@ canvas {
     align-items: center;
     font-size: 60px;
 }
+/*................scorestyle*/
 
+#score{
+    font-family: "Dokdo", Arial, Helvetica, sans-serif;
+    color:gold;
+    align-items: center;
+    font-size: 60px;
+}
+
+#highscore {
+    font-family: "Dokdo", Arial, Helvetica, sans-serif;
+    color:gold;
+    align-items: center;
+    font-size: 60px;
+}
 
