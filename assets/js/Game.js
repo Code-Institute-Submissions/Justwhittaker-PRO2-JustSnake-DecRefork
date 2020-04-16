@@ -26,7 +26,7 @@ function getRandomInt(min,max) {
     return Math.floor(Math.random() + (max- min)) + min;
 }
 //game loop
-function loop() {
+function loop() {{
     requestAnimationFrame(loop)
     if (++count < 4) {
         return;
@@ -98,6 +98,7 @@ function loop() {
             }
         }
     }
+}
 
     };
 
