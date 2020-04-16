@@ -52,7 +52,7 @@ In addition, if it is not obvious, you should also describe how to run your code
 Credits
 Content
 JQuery research
-    1. CodeInstitute Java Funadementals - Var and axis
+    1. CodeInstitute Java Funadementals - "Var","if", "Else if", "arrays" and "axis"
     2. 
 
 Media

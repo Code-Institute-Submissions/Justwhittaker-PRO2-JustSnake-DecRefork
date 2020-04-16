@@ -1,4 +1,4 @@
-var canvas =document.getElementById('snake');
+var canvas =document.getElementById('game');
 var context = canvas.getContext('2d');
 var grid = 16;
 var count = 0;
@@ -21,3 +21,52 @@ var apple = {
     y:360,
 };
 
+//game loop
+function loop() {
+    requestAnimationFrame(loop)
+    if (++count < 4) {
+        return;
+    }
+    count = 0;
+    context.clearRect(0,0,canvas.width.canvas.height);
+    //move snake
+    snake.x += snake.dx;
+    snake.y += snake.dy;
+    // wrap snake pos horizontally
+    if (snake.x < 0) {
+        snake.x = canvas.width -grid;
+    }
+    else if (snake.x >= canvas.width) {
+        snake.x = 0;
+    }
+    // wrap snake pos vertically
+    if (snake.y <0) {
+        snake.y = canvas.height - grid;
+    }
+    else if (snake.y >= canvas.height) {
+        snake.y = 0;
+    }
+    // front array is the head of the snake
+    snake.cells.unshift({x: snake.x, y: snake.y})
+    // remove cells as the snake moves
+    if (snake.cells.length > snake.maxcCells) {
+        snake.cells.pop();
+    }
+    // create snake
+    context.fillStyle = 'green';
+    snake.cells.forEach(function(cell. index) {
+        context.fillRect(cell.x, cell.y, grid-1,grid-1)
+    // snake eats apple
+        if (cell.x === apple.x && cell.y === apple.y){
+            snake.maxCells++;
+            score+=10;
+    // get score
+            document.getElementById('score').innerHTML=score;
+        
+    // make apple
+    // canvas 600X600 which is 30X30 grids
+    
+        }
+    }
+
+}
