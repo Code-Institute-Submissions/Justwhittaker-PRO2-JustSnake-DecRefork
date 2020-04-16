@@ -9,11 +9,13 @@ body {
     background: darkblue;
     align-items: center;
     justify-content: center;
+    position: absolute;
     
 }
 canvas {
     border: 8px solid black;
     background: lightblue;
+    position: absolute;
 }
 .h1 {
     font-family: "Dokdo", Arial, Helvetica, sans-serif;
@@ -32,4 +34,17 @@ canvas {
     min-width: 40px;
     max-height: 160px;
 }
+.pa {
+    font-family: "Dokdo", Arial, Helvetica, sans-serif;
+    color:lightcoral;
+    align-items: center;
+    font-size: 60px;
+}
+.pb{
+    font-family: "Dokdo", Arial, Helvetica, sans-serif;
+    color:lightcoral;
+    align-items: center;
+    font-size: 60px;
+}
+
 
