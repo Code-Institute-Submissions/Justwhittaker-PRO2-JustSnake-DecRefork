@@ -64,9 +64,37 @@ function loop() {
             document.getElementById('score').innerHTML=score;
         
     // make apple
+    context.fillStyle = "yellow";
+    context.fillRect (apple.x, apple.y, grid-1, grid-1);
+
     // canvas 600X600 which is 30X30 grids
-    
+    apple.x = getRandomInt (0,30) * grid;
+    apple.y = getRandomInt (0,30) * grid;
+        }
+    // collision check
+    for (var i = index + 1; i < snake.cells.length; i++)
+        {
+            //snake collision reset
+            if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y)
+            {
+                if(score>max)
+                {
+                    max=score;
+                }
+            snake.x = 180;
+            snake.y = 180;
+            snake.cells = [];
+            snake.maxCells = 4;
+            snake.dx = grid;
+            snake.dy = 0;
+                    score=0;
+            apple.x = getRandomInt(0,30) * grid;
+            apple.y = getRandomInt(0,30) * grid;
+                document.getElementById('high').innerHTML=max;
+            }
         }
     }
+
+    };
 
 }
