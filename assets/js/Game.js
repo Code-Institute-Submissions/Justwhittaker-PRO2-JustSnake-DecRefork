@@ -6,21 +6,25 @@ var score = 0;
 var max = 0;
 
 var snake = {
-    x: 180,
-    y: 180,
+    x: 160,
+    y: 160,
 
 //snake velocity moving 1 length every frame
     dx: grid,
     dy: 0,
 //tracking occupied grid
     cells: [],
+
+    maxCells: 4;
 };
 
 var apple = {
-    x:360,
-    y:360,
+    x:320,
+    y:320
 };
-
+function getRandomInt(min,max) {
+    return Math.floor(Math.random() + (max- min)) + min;
+}
 //game loop
 function loop() {
     requestAnimationFrame(loop)
