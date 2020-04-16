@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Dokdo&display=swap');
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: darkblue;
+    align-items: center;
+    justify-content: center;
+    
+}
+canvas {
+    border: 8px solid black;
+    background: lightblue;
+}
+.h1 {
+    font-family: "Dokdo", Arial, Helvetica, sans-serif;
+    color:lightcoral;
+    align-items: center;
+    font-size: 60px;
+}
+.logo {
+    background: url("../images/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    height: 170px;
+    width: 290px;
+    min-width: 40px;
+    max-height: 160px;
+}
+
