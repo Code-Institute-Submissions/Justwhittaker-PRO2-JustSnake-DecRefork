@@ -54,11 +54,11 @@ if (snake.y < 0) {
     snake.y = 0;
   }
 // front array is the head of the snake
-     snake.cells.unshift({x: snake.x, y: snake.y});
-// remove cells as the snake moves
-    if (snake.cells.length > snake.maxcCells) {
-        snake.cells.pop();
-    }
+snake.cells.unshift({x: snake.x, y: snake.y});
+  // remove cells as we move away from them
+  if (snake.cells.length > snake.maxCells) {
+    snake.cells.pop();
+  }
 // make apple
     context.fillStyle = 'yellow';
     context.fillRect(apple.x, apple.y, grid-1, grid-1);
@@ -109,7 +109,7 @@ if (snake.y < 0) {
 
 // give movement on keyboard
 document.addEventListener('keydown',function(e) {
-// left arrow key
+     // left arrow key
   if (e.which === 37 && snake.dx === 0) {
     snake.dx = -grid;
     snake.dy = 0;
