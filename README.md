@@ -65,3 +65,7 @@ Acknowledgements
 https://fonts.google.com/specimen/Bitter?selection.family=Bitter:wght@700&sidebar.open
 
 I received inspiration for this project from X
+
+https://www.w3schools.com/tags/att_img_align.asp
+https://www.w3schools.com/graphics/game_canvas.asp
+
