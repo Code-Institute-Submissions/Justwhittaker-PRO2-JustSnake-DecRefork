@@ -131,14 +131,6 @@ document.addEventListener('keydown',function(e) {
   }
 });
 
-// Game Over label
-gameOverLabel = new Label("GAME OVER<br>Tap to Restart");
-gameOverLabel.x = 8;
-gameOverLabel.y = 128;
-gameOverLabel.color = 'white';
-gameOverLabel.font = '32px strong';
-gameOverLabel.textAlign = 'center';
-
 //start game
 requestAnimationFrame(loop);
 
