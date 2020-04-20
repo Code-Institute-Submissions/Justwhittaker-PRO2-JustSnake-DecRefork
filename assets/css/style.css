@@ -35,6 +35,7 @@ canvas {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
+    align-content: center;
     height: 160px;
     width: 280px;
     min-width: 40px;

@@ -1,6 +1,6 @@
 JUST SNAKE
 
-In the early 2000's as technology increased and cellphones had become more accessible with multiple0 capibilites.
+In the early 2000's as technology increased and cellphones had become more accessible with multiple capibilites.
 Cellphone games such as Snake came standard with your cellphone such as the popular Nokia 3110, we all tried betting our top scores.
 
 I have decided to recreate the poplular game for everyone to enjoy in both the classic format for celluar use as well as for the pc.
@@ -27,7 +27,7 @@ another feature 2 - save highscores to a game centre to allow the user to come b
 
 Technologies Used
 languages - HTML5, CSS3, JQuery
-framework - 
+framework - Wireframe was done on Balsamiq href =
 libraries and other tools - Google fonts, PNGtree.com
 
 JQuery
@@ -69,3 +69,10 @@ I received inspiration for this project from X
 https://www.w3schools.com/tags/att_img_align.asp
 https://www.w3schools.com/graphics/game_canvas.asp
 
+// @see https://stackoverflow.com/a/1527820/2124254
+
+https://tutorialzine.com/2015/06/making-your-first-html5-game-with-phaser
+
+https://github.com/infusion/HTML5-Experiments/blob/master/html5-snake.html
+
+https://fonts.google.com/specimen/Bitter?selection.family=Bitter:wght@700&sidebar.open
