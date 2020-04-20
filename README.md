@@ -76,3 +76,6 @@ https://tutorialzine.com/2015/06/making-your-first-html5-game-with-phaser
 https://github.com/infusion/HTML5-Experiments/blob/master/html5-snake.html
 
 https://fonts.google.com/specimen/Bitter?selection.family=Bitter:wght@700&sidebar.open
+
+https://stackoverflow.com/questions/10879955/how-to-align-an-image-dead-center-with-bootstrap
+
