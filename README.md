@@ -79,3 +79,5 @@ https://fonts.google.com/specimen/Bitter?selection.family=Bitter:wght@700&sideba
 
 https://stackoverflow.com/questions/10879955/how-to-align-an-image-dead-center-with-bootstrap
 
+https://developers.google.com/speed/libraries
+
