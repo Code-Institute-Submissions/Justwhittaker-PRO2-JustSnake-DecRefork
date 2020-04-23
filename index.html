@@ -23,5 +23,32 @@
             
 <canvas width='400' height="400" id="game"> </canvas>
     <script src="assets/js/Game.js"></script>
+    
+    <!--Game Over -->
+    <div id="gameover">
+        <h1>Game Over</h1>
+        <p>Press to Start</p>
+        <a id="new_game">New Game</a>
+        <a id="settings">Settings</a>
+    </div>
+    <!--Settings-->
+    <div id="settings">
+        <h1>Settings</h1>
+        <a id="new_game_settings">New game</a>
+        <p>Speed:
+            <input id="speed1" type="radio" name="speed" value="100"/>
+                <label for="speed1">Slow</label>
+            <input id="speed2" type="radio" name="speed" value="75"/>
+                <label for="speed2">Normal<label>
+            <input id="speed3" type="radio" name="speed" value="35"/>
+                <label for="speed3">Fast</label>
+        </p>
+        <p>Wall:
+            <input id="wallon" type="radio" name="wall" value="1"/>
+                <label for="wallon">On</label>
+            <input id="walloff" type="radio" name="wall" value="0"/>
+                <label for="walloff">Off</label>
+        </p>
+    </div>
 </body>
 </html>
