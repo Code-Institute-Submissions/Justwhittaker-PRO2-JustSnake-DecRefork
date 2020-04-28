@@ -81,3 +81,5 @@ https://stackoverflow.com/questions/10879955/how-to-align-an-image-dead-center-w
 
 https://developers.google.com/speed/libraries
 
+https://www.html5canvastutorials.com/advanced/html5-canvas-snake-game/ 
+
