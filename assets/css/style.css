@@ -39,12 +39,10 @@ canvas:focus{
 /*................headings, logos*/
 .h1 {
     font-family: "Dokdo", Arial, Helvetica, sans-serif;
-    color:lightcoral;
+    color:rgb(235, 23, 23);
     align-items: center;
     font-size: 60px;
-    width: 100px;
-    margin-top: 10px;
-    display: inline-block;
+    padding:0 auto;
 }
 .logo {
     background: url("../images/logo.png");
@@ -53,9 +51,9 @@ canvas:focus{
     background-size: cover;
     border-radius: 50%;
     align-items: center;
-    height: 160px;
-    width: 280px;
-    min-width: 40px;
+    height: 170px;
+    width: 90px;
+    min-width: 160px;
     max-height: 160px;
     display: block;
     margin-left: auto;
@@ -64,7 +62,7 @@ canvas:focus{
 
 .score {
     font-family: "Dokdo", Arial, Helvetica, sans-serif;
-    color:lightcoral;
+    color:greenyellow;
     align-items: center;
     font-size: 60px;
     padding:0 auto;
