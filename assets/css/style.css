@@ -60,6 +60,22 @@ canvas:focus{
     margin-right: auto;
 }
 
+.logo2 {
+    background: url("../images/apple.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    align-items: center;
+    height: 110px;
+    width: 110px;
+    min-width: 160px;
+    max-height: 160px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .score {
     font-family: "Dokdo", Arial, Helvetica, sans-serif;
     color:greenyellow;

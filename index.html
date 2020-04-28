@@ -20,9 +20,9 @@
             <canvas class="wrap" id="snake" width="320" height="320" tabindex="1"></canvas>
         
             <!-- Game Over Screen -->
-            <div id="gameover">
+            <div class="pa" id="gameover">
                 <h2>Game Over</h2>
-                <p>press <span style="background-color: #FFFFFF; color: #000000">space</span> to begin a</p>
+                <p>Press <span style="background-color: #FFFFFF; color: #000000">SpaceBar</span> to begin </p>
                 <a id="newgame_gameover">new game</a>
                 <a id="setting_gameover">settings</a>
             </div>
@@ -54,7 +54,7 @@
             <!-- Main Menu Screen -->
             <div class="pa"id="menu">
                 <h2>LETS GO!</h2>
-
+                <p class="logo2"></p>
                 <a id="newgame_menu">new game</a>
                 <a id="setting_menu">settings</a>
             </div>
@@ -65,7 +65,7 @@
 <script type="text/javascript">
 
 (function(){  
-    /////////////////////////////////////////////////////////////
+    //Function Script
     
     // Canvas & Context
     var canvas;
@@ -74,7 +74,7 @@
     // Snake
     var snake;
     var snake_dir;
-   var snake_next_dir;
+    var snake_next_dir;
     var snake_speed;
     
     // Food
@@ -100,15 +100,15 @@
     var speed_setting;
     var wall_setting;
     
-    /////////////////////////////////////////////////////////////
+    // Function
 
    var activeDot = function(x, y){
-        ctx.fillStyle = "#FFFFFF";
+        ctx.fillStyle = "#00FF00";
         ctx.fillRect(x * 10, y * 10, 10, 10);
     }
     
     
-    /////////////////////////////////////////////////////////////
+    // Directions
 
     var changeDir = function(key){
         
@@ -129,7 +129,7 @@
         } } } }
         
     }
-    /////////////////////////////////////////////////////////////
+    //add food
 
     var addFood = function(){
         food.x = Math.floor(Math.random() * ((canvas.width / 10) - 1));
@@ -141,19 +141,19 @@
         }
     }
     
-    /////////////////////////////////////////////////////////////
+    //checkBlock
 
     var checkBlock = function(x, y, _x, _y){
         return (x == _x && y == _y) ? true : false;
     }
     
-    /////////////////////////////////////////////////////////////
+    //add score
     
     var altScore = function(score_val){
         ele_score.innerHTML = String(score_val);
     }
     
-    /////////////////////////////////////////////////////////////
+    // Loop
 
     var mainLoop = function(){
         
@@ -203,7 +203,7 @@
         
         // --------------------
     
-        // Autophagy death
+        // Snake Collision
             for(var i = 1; i < snake.length; i++){
                 if (snake[0].x == snake[i].x && snake[0].y == snake[i].y){
                     showScreen(3);
@@ -244,7 +244,7 @@
             setTimeout(mainLoop, snake_speed);
     }
     
-    /////////////////////////////////////////////////////////////
+    //new game function
 
     var newGame = function(){
         
@@ -270,10 +270,8 @@
         mainLoop();
                 
     }
-    
-    /////////////////////////////////////////////////////////////
-    
-    // Change the snake speed...
+
+    // Change speed
     // 150 = slow
     // 100 = normal
     // 50 = fast
@@ -281,15 +279,15 @@
         snake_speed = speed_value;
     }
     
-    /////////////////////////////////////////////////////////////
+    //wall color
     var setWall = function(wall_value){
         wall = wall_value;
         if(wall == 0){screen_snake.style.borderColor = "#606060";}
-        if(wall == 1){screen_snake.style.borderColor = "#FFFFFF";}
+        if(wall == 1){screen_snake.style.borderColor = "#FFFF33";}
     }
      
-    /////////////////////////////////////////////////////////////
-    
+    //
+
     // 0 for the game
     // 1 for the main menu
     // 2 for the settings screen
@@ -323,8 +321,8 @@
         }
     }
         
-    /////////////////////////////////////////////////////////////
-        
+    //getElementbyID
+
     window.onload = function(){
         
         
@@ -398,9 +396,7 @@
     }
 
 })();
-
-
-  </script>
+</script>
 	
 </body>      
 </html>
