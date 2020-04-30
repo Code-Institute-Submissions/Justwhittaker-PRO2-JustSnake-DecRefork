@@ -6,19 +6,21 @@ Cellphone games such as Snake came standard with your cellphone such as the popu
 I have decided to recreate the poplular game for everyone to enjoy in both the classic format for celluar use as well as for the pc.
 
 UX
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+I developed this website to bring back the joy of playing snake on our cellphones,
+I wanted the website to be user friendly, basic, easy to navigate and quick to respond.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
+I used Bootstrap4 to assit with the mobile friendly code to ensure that the game can be played anywhere.
 
-As a user type, I want to perform an action, so that I can achieve a goal.
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+I wanted a seasoned gamer still to have fun, I want to perform an quick and simple game, so that I can achieve a goal.
+I designed my wireframe on Balsamiq please follow the link to find the preview
+href = https://balsamiq.cloud/s7p10rp/p3hmyt9/r2278
 
 Features
 Simple, clean and basic gaming
 
 Existing Features
 Feature 1 - Score keeping
-Feature 2 - memorize highscores
+Feature 2 - Menu and different settings
 Feature 3 - Easy and simple snake play
 ...
 Features Left to Implement
@@ -27,7 +29,7 @@ another feature 2 - save highscores to a game centre to allow the user to come b
 
 Technologies Used
 languages - HTML5, CSS3, JQuery
-framework - Wireframe was done on Balsamiq href =
+framework - Wireframe was done on Balsamiq 
 libraries and other tools - Google fonts, PNGtree.com
 
 JQuery
@@ -40,20 +42,12 @@ Whenever it is feasible, prefer to automate your tests, and if you've done so, p
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
 Deployment
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-
-Different values for environment variables (Heroku Config Vars)?
-Different configuration files?
-Separate git branch?
-In addition, if it is not obvious, you should also describe how to run your code locally.
 
 Credits
 Content
 JQuery research
     1. CodeInstitute Java Funadementals - "Var","if", "Else if", "arrays" and "axis"
-    2. 
 
 Media
 The photos used in this site were obtained from:
@@ -64,22 +58,17 @@ Acknowledgements
 
 https://fonts.google.com/specimen/Bitter?selection.family=Bitter:wght@700&sidebar.open
 
-I received inspiration for this project from X
-
+I received inspiration and technical knowledge for this project from the following platforms
+1. Alignment
 https://www.w3schools.com/tags/att_img_align.asp
 https://www.w3schools.com/graphics/game_canvas.asp
 
+2. JQuery
 // @see https://stackoverflow.com/a/1527820/2124254
-
 https://tutorialzine.com/2015/06/making-your-first-html5-game-with-phaser
-
 https://github.com/infusion/HTML5-Experiments/blob/master/html5-snake.html
-
-https://fonts.google.com/specimen/Bitter?selection.family=Bitter:wght@700&sidebar.open
-
+https://www.html5canvastutorials.com/advanced/html5-canvas-snake-game/ 
 https://stackoverflow.com/questions/10879955/how-to-align-an-image-dead-center-with-bootstrap
-
 https://developers.google.com/speed/libraries
 
-https://www.html5canvastutorials.com/advanced/html5-canvas-snake-game/ 
 
