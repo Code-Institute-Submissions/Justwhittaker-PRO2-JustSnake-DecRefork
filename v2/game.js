@@ -12,6 +12,9 @@ var direction = {
 
 var snake = {
     direction: direction.NORTH,
+    head: {
+        position: { x: -1, y: -1 }
+    },
     parts: [
         { position: { x: 10, y: 10 } }
     ]
@@ -59,9 +62,9 @@ function clearWorld() {
 }
 
 function checkFoodHit() {
-    if (snake.position.x == food.position.x && snake.position.y == food.position.y) {
-        addFood();
+    if (snake.parts[0].position.x == food.position.x && snake.parts[0].position.y == food.position.y) {
         growSnake();
+        addFood();
     }
 }
 
@@ -71,7 +74,7 @@ function addFood() {
 }
 
 function growSnake() {
-    snake.length = snake.length + 1;
+    snake.parts.push(snake.head);
 }
 
 function loop() {
@@ -95,24 +98,35 @@ function setSnakeDirection(direction) {
 }
 
 function moveSnake() {
+    var head = {
+        position: {
+            x: snake.parts[0].position.x,
+            y: snake.parts[0].position.y
+        }
+    };
+    snake.head.position.x = head.position.x;
+    snake.head.position.y = head.position.y;
     if (snake.direction == direction.NORTH) {
-        snake.position.y = snake.position.y - 1;
+        head.position.y = head.position.y - 1;
     }
     if (snake.direction == direction.EAST) {
-        snake.position.x = snake.position.x + 1;
+        head.position.x = head.position.x + 1;
     }
     if (snake.direction == direction.SOUTH) {
-        snake.position.y = snake.position.y + 1;
+        head.position.y = head.position.y + 1;
     }
     if (snake.direction == direction.WEST) {
-        snake.position.x = snake.position.x - 1;
+        head.position.x = head.position.x - 1;
     }
+    snake.parts.pop();
+    snake.parts.unshift(head);
 }
 
 function drawSnake() {
     ctx.fillStyle = '#00FF00';
-    for (var i = 0; i < snake.length; i++) {
-        ctx.fillRect(snake.position.x * 10, snake.position.y * 10, 10, 10);
+    for (var i = 0; i < snake.parts.length; i++) {
+        var part = snake.parts[i];
+        ctx.fillRect(part.position.x * 10, part.position.y * 10, 10, 10);
     }
 }
 
