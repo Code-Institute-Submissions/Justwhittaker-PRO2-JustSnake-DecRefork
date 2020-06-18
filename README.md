@@ -18,32 +18,31 @@ href = https://balsamiq.cloud/s7p10rp/p3hmyt9/r2278
 
 ### User Perspectective Story
 Herewith a discriptive step by step breakdown of the UX for User A:
-1. Landing page 
-a. When landing on the Home page the user firsts notices the bright logo & heading to know they have found the right page 
-b. Underneath the Logo there is a score column so that the user can quickly identify there current score, this resets when a new game starts
-c. In a conveint sized canvas box is the game the starts playing immedaitely and gets the user into game mode as they land on the page.
-d. Below the canvas is quick instructions so that the user can grasp the controls immedaitely.
-e. The screen is very responsive and fits on all devises with no need to scroll down to read any infomation.
+Landing page 
+<li> When landing on the Home page the user firsts notices the bright logo & heading to know they have found the right page </li>
+<li> Underneath the Logo there is a score column so that the user can quickly identify there current score, this resets when a new game starts</li>
+<li> In a conveint sized canvas box is the game the starts playing immedaitely and gets the user into game mode as they land on the page.</li>
+<li> Below the canvas is quick instructions so that the user can grasp the controls immedaitely.</li>
+<li> The screen is very responsive and fits on all devises with no need to scroll down to read any infomation.</li>
 
 ## Features
 Simple, clean and basic gaming
 
 Current features
-Feature 1 - Snake game including Apple for food
-Feature 2 - Keeping score and resetting after the match
+<li>Feature 1 - Snake game including Apple for food</li>
+<li>Feature 2 - Keeping score and resetting after the match</li>
 ...
 Features Left to Implement
 
-Feature 1 - Score keeping
-Feature 2 - Menu and different settings
-Feature 3 - Easy and simple snake play
-
-Another feature 1 - change color of the snake when it reaches a highscore level
-another feature 2 - save highscores to a game centre to allow the user to come back to beat thier previous scores.
+<li>Feature 1 - Score keeping</li>
+<li>Feature 2 - Menu and different settings</li>
+<li>Feature 3 - Easy and simple snake play</li>
+<li>Feature 4 - change color of the snake when it reaches a highscore level</li>
+<li>Feature 5 - save highscores to a game centre to allow the user to come back to beat thier previous scores.</li>
 
 Technologies Used
-languages - HTML5, CSS3, JQuery, JavaScript
-framework - Wireframe was done on Balsamiq 
+languages - HTML5, CSS3, JQuery, JavaScript <br>
+framework - Wireframe was done on Balsamiq  <br>
 libraries and other tools - Google fonts, PNGtree.com
 
 ## Testing
@@ -114,14 +113,14 @@ As a child of a dl element.
 
 11. Error: Element details not allowed as child of element get-repo-controller in this context. (Suppressing further errors from this subtree.)
 From line 765, column 3; to line 765, column 124
-roller>↩  <details class="position-relative details-overlay details-reset" data-action="toggle:get-repo-controller#onDetailsToggle">↩    <
+roller>↩  details class="position-relative details-overlay details-reset" data-action="toggle:get-repo-controller#onDetailsToggle">↩    <
 Contexts in which element details may be used:
 Where flow content is expected.
 <li> </li>
 
 12. Error: Element script must not have attribute async unless attribute src is also specified or unless attribute type is specified with value module.
 From line 1171, column 5; to line 1171, column 294
-iv>↩↩↩    <script crossorigin="anonymous" async="async" integrity="sha512-WcQmT2vhcClFVOaaAJV/M+HqsJ2Gq/myvl6F…-conditional-compat" data-src="https://github.githubassets.com/assets/compat-bootstrap-59c4264f.js"></scri
+iv>↩↩↩    script crossorigin="anonymous" async="async" integrity="sha512-WcQmT2vhcClFVOaaAJV/M+HqsJ2Gq/myvl6F…-conditional-compat" data-src="https://github.githubassets.com/assets/compat-bootstrap-59c4264f.js"></scri
 <li> </li>
 
 13. Error: Element script must not have attribute integrity unless attribute src is also specified.
@@ -166,12 +165,12 @@ https://justwhittaker.github.io/PRO2-JustSnake/.
 
 ## Credits
 
-## Dependencies
+### Dependencies
 
 1. keymaster.js [https://github.com/madrobby/keymaster]// https://www.npmjs.com/search?q=keymaster
-1. JQuery (html js middleware)
+2. JQuery (html js middleware)
     The project uses JQuery to simplify DOM manipulation.
-1. bootstrap (not used atm)
+3. bootstrap (not used atm)
 
 Content
 JQuery research
@@ -182,26 +181,27 @@ JQuery research
 Better Git Commit terms
 http://karma-runner.github.io/5.0/dev/git-commit-msg.html
 
-Media
+### Media
 The photos used in this site were obtained from:
 1. PNGtree.com  
-    https://pngtree.com/so/apple
+    https://pngtree.com/so/apple<br>
     https://pngtree.com/so/snake
-Acknowledgements
+
+### Acknowledgements
 
 https://fonts.google.com/specimen/Bitter?selection.family=Bitter:wght@700&sidebar.open
 
 I received inspiration and technical knowledge for this project from the following platforms
 1. Alignment
-https://www.w3schools.com/tags/att_img_align.asp
+https://www.w3schools.com/tags/att_img_align.asp<br>
 https://www.w3schools.com/graphics/game_canvas.asp
 
 2. JQuery
-// @see https://stackoverflow.com/a/1527820/2124254
-https://tutorialzine.com/2015/06/making-your-first-html5-game-with-phaser
-https://github.com/infusion/HTML5-Experiments/blob/master/html5-snake.html
-https://www.html5canvastutorials.com/advanced/html5-canvas-snake-game/ 
-https://stackoverflow.com/questions/10879955/how-to-align-an-image-dead-center-with-bootstrap
+// @see https://stackoverflow.com/a/1527820/2124254 <br>
+https://tutorialzine.com/2015/06/making-your-first-html5-game-with-phaser<br>
+https://github.com/infusion/HTML5-Experiments/blob/master/html5-snake.html<br>
+https://www.html5canvastutorials.com/advanced/html5-canvas-snake-game/ <br>
+https://stackoverflow.com/questions/10879955/how-to-align-an-image-dead-center-with-bootstrap<br>
 https://developers.google.com/speed/libraries
 
 
