@@ -1,0 +1,12 @@
+.game-panel {
+    background: orange;
+}
+
+.snake-head {
+    background: black;
+}
+
+.square {
+    width: 5px !important;
+    height: 5px;
+}
