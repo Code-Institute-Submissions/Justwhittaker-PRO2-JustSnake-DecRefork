@@ -1,4 +1,5 @@
 // game.js
+// variables
 
 var canvas;
 var ctx;
@@ -29,6 +30,7 @@ key('d', goEast);
 key('s', goSouth);
 key('a', goWest);
 
+// Set key Direction Controls
 function goNorth() {
     if (snake.direction != direction.SOUTH) {
         setSnakeDirection(direction.NORTH);
@@ -53,11 +55,13 @@ function goWest() {
     }
 }
 
+// Intialize World
 function initWorld() {
     canvas = $('#game-panel')[0];
     ctx = canvas.getContext('2d');
 }
 
+// Intialize Snake
 function initSnake() {
     snake = {
         direction: direction.NORTH,
@@ -69,13 +73,14 @@ function initSnake() {
         ]
     };
 }
-
+// Reset World -- Core code from https://www.html5canvastutorials.com/advanced/html5-canvas-snake-game/
 function clearWorld() {
     ctx.beginPath();
     ctx.fillStyle = '#000000';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
+// Snake consumes Food
 function checkFoodHit() {
     if (snake.parts[0].position.x == food.position.x && snake.parts[0].position.y == food.position.y) {
         growSnake();
@@ -85,6 +90,7 @@ function checkFoodHit() {
     }
 }
 
+// Score Functionality 
 function drawScore() {
     $('#score').html(score);
 }
@@ -97,15 +103,27 @@ function plusScore() {
     score = score + 10;
 }
 
+// Randomize food spawn -- Core code from https://www.html5canvastutorials.com/advanced/html5-canvas-snake-game/
 function addFood() {
     food.position.x = Math.floor(Math.random() * ((canvas.width / 10) - 1));
     food.position.y = Math.floor(Math.random() * ((canvas.height / 10) - 1));
 }
 
+// Grow Snake after eating apple
 function growSnake() {
     snake.parts.push(snake.head);
 }
 
+// Primary Loop
+function newGame() {
+    initWorld();
+    initSnake();
+    addFood();
+    resetScore();
+    drawScore();
+}
+
+// Secondary Loop
 function loop() {
     moveSnake();
     checkWallHit();
@@ -116,19 +134,12 @@ function loop() {
     drawFood();
 }
 
-function newGame() {
-    initWorld();
-    initSnake();
-    addFood();
-    resetScore();
-    drawScore();
-}
-
 function start() {
     newGame();
-    setInterval(loop, 300);
+    setInterval(loop, 200);
 }
 
+// Collision detection
 function checkWallHit() {
     var head = snake.parts[0];
     if (head.position.x < 0 || head.position.y < 0 || head.position.x == canvas.width / 10 || head.position.y == canvas.height / 10) {
@@ -152,6 +163,7 @@ function setSnakeDirection(direction) {
     snake.direction = direction;
 }
 
+// Snake direction render
 function moveSnake() {
     var head = {
         position: {
@@ -173,6 +185,7 @@ function moveSnake() {
     if (snake.direction == direction.WEST) {
         head.position.x = head.position.x - 1;
     }
+    //Build blocks -- Core code https://www.html5canvastutorials.com/advanced/html5-canvas-snake-game/
     snake.parts.pop();
     snake.parts.unshift(head);
 }
