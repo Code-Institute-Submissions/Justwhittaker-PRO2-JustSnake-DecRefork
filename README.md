@@ -2,23 +2,23 @@
 
 ## JUST SNAKE
 
-In the early 2000's as technology increased and cellphones had become more accessible with multiple capibilites.
-Cellphone games such as Snake came standard with your cellphone such as the popular Nokia 3110, we all tried betting our top scores.
+In the early 2000's as technology increased and cellphones had become more accessible with multiple capibilites.<br>
+Cellphone games such as Snake came standard with your cellphone such as the popular Nokia 3110, we all tried betting our top scores.<br>
 
 I have decided to recreate the poplular game for everyone to enjoy in both the classic format for celluar use as well as for the pc.
 
 ## UX
-For the UX on this project I wanted to create a simple and user friendly site. My target audience is ages, hence I chose vibarant colors.
+For the UX on this project I wanted to create a simple and user friendly site. My target audience is ages, hence I chose vibarant colors.<br>
 
-I used Bootstrap4 to assit with the mobile friendly code to ensure that the game can be played anywhere.
+I used Bootstrap4 to assit with the mobile friendly code to ensure that the game can be played anywhere.<br>
 
-I wanted a seasoned gamer still to have fun, I want to perform an quick and simple game, so that I can achieve a goal.
+I wanted a seasoned gamer still to have fun, I want to perform an quick and simple game, so that I can achieve a goal.<br>
 I designed my wireframe on Balsamiq please follow the link to find the preview
 href = https://balsamiq.cloud/s7p10rp/p3hmyt9/r2278
 
 ### User Perspectective Story
-Herewith a discriptive step by step breakdown of the UX for User A:
-Landing page 
+Herewith a discriptive step by step breakdown of the UX for User A:<br>
+Landing page <br>
 <li> When landing on the Home page the user firsts notices the bright logo & heading to know they have found the right page </li>
 <li> Underneath the Logo there is a score column so that the user can quickly identify there current score, this resets when a new game starts</li>
 <li> In a conveint sized canvas box is the game the starts playing immedaitely and gets the user into game mode as they land on the page.</li>
@@ -31,7 +31,8 @@ Simple, clean and basic gaming
 Current features
 <li>Feature 1 - Snake game including Apple for food</li>
 <li>Feature 2 - Keeping score and resetting after the match</li>
-...
+<br>
+...<br>
 Features Left to Implement
 
 <li>Feature 1 - Score keeping</li>
