@@ -2,6 +2,9 @@
 
 var canvas;
 var ctx;
+var snake;
+
+var score = 0;
 
 var direction = {
     NORTH: 0,
@@ -10,15 +13,6 @@ var direction = {
     WEST: 3
 };
 
-var snake = {
-    direction: direction.NORTH,
-    head: {
-        position: { x: -1, y: -1 }
-    },
-    parts: [
-        { position: { x: 10, y: 10 } }
-    ]
-};
 
 var food = {
     position: {
@@ -35,24 +29,44 @@ key('s', goSouth);
 key('a', goWest);
 
 function goNorth() {
-    setSnakeDirection(direction.NORTH);
+    if (snake.direction != direction.SOUTH) {
+        setSnakeDirection(direction.NORTH);
+    }
 }
 
 function goEast() {
-    setSnakeDirection(direction.EAST);
+    if (snake.direction != direction.WEST) {
+        setSnakeDirection(direction.EAST);
+    }
 }
 
 function goSouth() {
-    setSnakeDirection(direction.SOUTH);
+    if (snake.direction != direction.NORTH) {
+        setSnakeDirection(direction.SOUTH);
+    }
 }
 
 function goWest() {
-    setSnakeDirection(direction.WEST);
+    if (snake.direction != direction.EAST) {
+        setSnakeDirection(direction.WEST);
+    }
 }
 
 function initWorld() {
     canvas = $('#game-panel')[0];
     ctx = canvas.getContext('2d');
+}
+
+function initSnake() {
+    snake = {
+        direction: direction.NORTH,
+        head: {
+            position: { x: -1, y: -1 }
+        },
+        parts: [
+            { position: { x: 10, y: 10 } }
+        ]
+    };
 }
 
 function clearWorld() {
@@ -65,7 +79,21 @@ function checkFoodHit() {
     if (snake.parts[0].position.x == food.position.x && snake.parts[0].position.y == food.position.y) {
         growSnake();
         addFood();
+        plusScore();
+        drawScore();
     }
+}
+
+function drawScore() {
+    $('#score').html(score);
+}
+
+function resetScore() {
+    score = 0;
+}
+
+function plusScore() {
+    score = score + 10;
 }
 
 function addFood() {
@@ -79,16 +107,42 @@ function growSnake() {
 
 function loop() {
     moveSnake();
+    checkWallHit();
+    checkSnakeHit();
     checkFoodHit();
     clearWorld();
     drawSnake();
     drawFood();
 }
 
-function start() {
+function newGame() {
     initWorld();
+    initSnake();
     addFood();
+    resetScore();
+    drawScore();
+}
+
+function start() {
+    newGame();
     setInterval(loop, 300);
+}
+
+function checkWallHit() {
+    var head = snake.parts[0];
+    if (head.position.x < 0 || head.position.y < 0 || head.position.x == canvas.width / 10 || head.position.y == canvas.height / 10) {
+        newGame();
+    }
+}
+
+function checkSnakeHit() {
+    var head = snake.parts[0];
+    for (var i = 1; i < snake.parts.length; i++) {
+        var part = snake.parts[i];
+        if (head.position.x == part.position.x && head.position.y == part.position.y) {
+            newGame();
+        }
+    }
 }
 
 // Snake
@@ -134,6 +188,7 @@ function drawFood() {
     ctx.fillStyle = 'red';
     ctx.fillRect(food.position.x * 10, food.position.y * 10, 10, 10);
 }
+
 // main
 
 $(document).ready(start);
