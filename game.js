@@ -136,7 +136,7 @@ function loop() {
 
 function start() {
     newGame();
-    setInterval(loop, 200);
+    setInterval(loop, 120);
 }
 
 // Collision detection
