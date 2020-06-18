@@ -1,11 +1,11 @@
-JUST SNAKE
+# JUST SNAKE
 
 In the early 2000's as technology increased and cellphones had become more accessible with multiple capibilites.
 Cellphone games such as Snake came standard with your cellphone such as the popular Nokia 3110, we all tried betting our top scores.
 
 I have decided to recreate the poplular game for everyone to enjoy in both the classic format for celluar use as well as for the pc.
 
-UX
+## UX
 I developed this website to bring back the joy of playing snake on our cellphones,
 I wanted the website to be user friendly, basic, easy to navigate and quick to respond.
 
@@ -15,7 +15,7 @@ I wanted a seasoned gamer still to have fun, I want to perform an quick and simp
 I designed my wireframe on Balsamiq please follow the link to find the preview
 href = https://balsamiq.cloud/s7p10rp/p3hmyt9/r2278
 
-Features
+## Features
 Simple, clean and basic gaming
 
 Existing Features
@@ -32,18 +32,24 @@ languages - HTML5, CSS3, JQuery
 framework - Wireframe was done on Balsamiq 
 libraries and other tools - Google fonts, PNGtree.com
 
-JQuery
-The project uses JQuery to simplify DOM manipulation.
 Testing
 // Debug
     //document.getElementById("debug").innerHTML = snake_dir + " " + snake_next_dir + " " + snake[0].x + " " + snake[0].y;   
 
-Deployment
+## Deployment
 
  I used Github pages in Github to control the deployment of the website you will find the deployment at 
 https://justwhittaker.github.io/PRO2-JustSnake/.
 
-Credits
+## Credits
+
+## Dependencies
+
+1. keymaster.js [https://github.com/madrobby/keymaster]
+1. JQuery (html js middleware)
+    The project uses JQuery to simplify DOM manipulation.
+1. bootstrap (not used atm)
+
 Content
 JQuery research
     1. CodeInstitute Java Funadementals - "Var","if", "Else if", "arrays" and "axis"
