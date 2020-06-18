@@ -23,6 +23,7 @@ var food = {
 
 // World
 
+// from keymaser.js
 key('w', goNorth);
 key('d', goEast);
 key('s', goSouth);
