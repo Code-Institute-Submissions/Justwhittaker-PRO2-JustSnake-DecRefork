@@ -45,7 +45,6 @@ canvas:focus{
     padding:0 auto;
 }
 .logo {
-    background: url("../images/logo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
