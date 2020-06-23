@@ -64,7 +64,7 @@ function initWorld() {
 // Intialize Snake
 function initSnake() {
     snake = {
-        direction: direction.NORTH,
+        direction: direction.EAST,
         head: {
             position: { x: -1, y: -1 }
         },
