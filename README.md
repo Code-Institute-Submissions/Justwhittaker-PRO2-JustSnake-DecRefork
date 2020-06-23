@@ -48,8 +48,19 @@ libraries and other tools - Google fonts, PNGtree.com
 
 ## Testing
 // Debug
+### GITpod Debug
+ReferenceError: key is not defined
+    at Object. (/workspace/PRO2-JustSnake/game.js:28:1)
+    at Module._compile (internal/modules/cjs/loader.js:1135:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
+    at Module.load (internal/modules/cjs/loader.js:986:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)
+    at internal/main/run_main_module.js:17:47
+
+### Nu HTML Checker
 https://validator.w3.org/nu/?doc=https%3A%2F%2Fgithub.com%2FJustwhittaker%2FPRO2-JustSnake
-    //document.getElementById("debug").innerHTML = snake_dir + " " + snake_next_dir + " " + snake[0].x + " " + snake[0].y;   
+   
 Nu Html Checker This tool is an ongoing experiment in better HTML checking, and its behavior remains subject to change
 
 Showing results for https://github.com/Justwhittaker/PRO2-JustSnake Checker Input and points of fixes and debugging noted Show sourceoutlineimage report
