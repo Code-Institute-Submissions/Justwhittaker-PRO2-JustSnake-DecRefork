@@ -67,16 +67,17 @@ function buttonSouth() {
     }
 }
 
-function buttonEast() {
+function buttonWest() {
     if (snake.direction != direction.WEST) {
         setSnakeDirection(direction.EAST)
     }
+}
 
-    function buttonWest() {
-        if (snake.direction != direction.EAST) {
-            setSnakeDirection(direction.WEST);
-        }
+function buttonEast() {
+    if (snake.direction != direction.EAST) {
+        setSnakeDirection(direction.WEST);
     }
+}
 
     // Intialize World
     function initWorld() {
@@ -228,4 +229,5 @@ function buttonEast() {
 
     // main
 
-    $(document).ready(start);
+    $(document).ready(start)
+;
