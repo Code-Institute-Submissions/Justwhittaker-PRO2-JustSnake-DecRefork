@@ -1,52 +1,280 @@
 # Milestone Project JavaScript/JQuery
 
-## JUST SNAKE
+## JUST SNAKE ##
+
+## Contents ##
+---
+
+* UX
+    * [Project Goals](#project-goals)
+    * [User Goals](#user-goals)
+    * [User Stories](#user-stories)
+    * [User Requirements and Expectations](#requirements)
+    * [Design Choices](#design-choices)
+        * [Fonts](#fonts)
+        * [Icons](#icons)
+        * [Colors](#colors)
+* [Wireframing](#wireframing)
+* [Features](#features)
+    * [Features that have been developed](#developed)
+    * [Features that will be implemented in the future](#implemented)
+* [Technologies](#technologies)
+* [Testing](#testing)
+* [Issues](#issues)
+* [Deployment](#deployment)
+* [Credit](#credits)
+
+## UX (User Experience) ##
+---
+<a name="project-goals"></a>
+### Project Goals ###
 
 In the early 2000's as technology increased and cellphones had become more accessible with multiple capibilites.<br>
 Cellphone games such as Snake came standard with your cellphone such as the popular Nokia 3110, we all tried betting our top scores.<br>
 
-I have decided to recreate the poplular game for everyone to enjoy in both the classic format for celluar use as well as for the pc.
+The **goal** for this project is to to recreate the poplular game for everyone to enjoy in both the classic format for celluar use as well as for the pc.
 
-## UX
-For the UX on this project I wanted to create a simple and user friendly site. My target audience is ages, hence I chose vibarant colors.<br>
+<a name="user-goals"></a>
+### User Goals ###
 
-I used Bootstrap4 to assit with the mobile friendly code to ensure that the game can be played anywhere.<br>
+For the UX on this project I wanted to create a simple and user friendly site. My target audience is all ages, hence I chose vibarant colors.<br>
 
-I wanted a seasoned gamer still to have fun, I want to perform an quick and simple game, so that I can achieve a goal.<br>
-I designed my wireframe on Balsamiq please follow the link to find the preview
+* **Testing his/her/their Skills** with **quick reflexes** within the **Boundry**
+* **Being entertained** by the game.
+* **Score high** on all cards.
+* Get a **final score**.
+* **Play** the game **again**.
+
+<a name="user-stories"></a>
+### User Stories ### 
+
+* The **user** wants an **attractive game** witha **non-distracting** background.
+* The **user** wants **clear instructions**
+* The **user** wants there to be a **score column** so that the user can quickly identify there current score, this **resets** when a new game starts.
+* The **user** wants to be **challenged** in his/her/their **skills**
+* The **user** wants a **conveint sized canvas box** 
+* The **user** wants the game to start **playing immedaitely** 
+* The **user** wants to **know** when a **the game is over**.
+* The **user** wants to get a maximum of points.
+* The **user** wants to **play best for the best score** the game.
+* The **user** wants to **have the possibility** to **play again**.
+
+<a name="requirements"></a>
+
+### Research ###
+
+* When developing this **game**, I kept in mind that the aesthetic should be inspired by the classic game. 
+* I tried to create a **simple and easy feel** to for a cleaner approach for the game page.
+* I checked **previously made snake games** and used **my own experience**.
+
+<a name="design-choices"></a>
+
+### Design Choices ###
+---
+
+<a name="fonts"></a>
+
+### Fonts ###
+
+* The **landing page** is using the gaming classic **Google Fonts** **Dokdo** for the H1 and H3. 
+* I paired it with the **Google Fonts** **Helvetica** for readability.
+* The **Game Over page** is using **Dokdo** again for the **H3 page title** paired with **Helvetica** on the **instructions** in the **header**.
+* I kept the **Dokdo** font for **better user experience**
+
+<a name="icons"></a>
+
+### Icons and Images ###
+
+* **The icon** used on the website are provided by [**FontAwesome**](https://fontawesome.com/)
+* The **image** used for the **landing page** is a **free image** from the image bank [**PNGtree**](https://PNGtree.com/snake) and (https://pngtree.com/so/apple) with a simple research with the keyword **snake & apple**.
+
+<a name="colors"></a>
+
+### Colors ###
+
+* The **color scheme** used for the website is a classic **90's gamer palette** composed of a combination of **dark and light green** for the **title** and a **classic grey** for the **buttons** on the **gaming consol** 
+
+![Color Scheme](assets/img/readme/palette.png) 
+![Inspiration](assets/img/readme/poster.jpg)
+
+<a name="wireframing"></a>
+
+## Wireframing ##
+---
+For **wireframing** I used the tool [**Balsamiq**](https://balsamiq.com/).
+
+Please follow the link to find the preview [here] (img/readme/justsnake.pdf)
 href = https://balsamiq.cloud/s7p10rp/p3hmyt9/r2278
 
-### User Perspectective Story
-Herewith a discriptive step by step breakdown of the UX for User A:<br>
-Landing page <br>
-<li> When landing on the Home page the user firsts notices the bright logo & heading to know they have found the right page </li>
-<li> Underneath the Logo there is a score column so that the user can quickly identify there current score, this resets when a new game starts</li>
-<li> In a conveint sized canvas box is the game the starts playing immedaitely and gets the user into game mode as they land on the page.</li>
-<li> Below the canvas is quick instructions so that the user can grasp the controls immedaitely.</li>
-<li> The screen is very responsive and fits on all devises with no need to scroll down to read any infomation.</li>
+* As you can see this is **a minimal wireframe** and I pushed a few changes for better readability and engagement:
+* I added **a full-screen hero image** on the game over page.
 
-## Features
-Simple, clean and basic gaming
+<a name="features"></a>
+## Features ## 
+---
 
-Current features
-<li>Feature 1 - Snake game including Apple for food</li>
-<li>Feature 2 - Keeping score and resetting after the match</li>
-<br>
-...<br>
-Features Left to Implement
+<a name="developed"></a>
+### Implemented Features ###
 
-<li>Feature 1 - Score keeping</li>
-<li>Feature 2 - Menu and different settings</li>
-<li>Feature 3 - Easy and simple snake play</li>
-<li>Feature 4 - change color of the snake when it reaches a highscore level</li>
-<li>Feature 5 - save highscores to a game centre to allow the user to come back to beat thier previous scores.</li>
+* **Responsiveness** on all screen sizes.
+* **large title** for attractiveness and engagement.
+* **snake mobiltiy** as an introduction to the theme including Apple for food
+* **Instructions** displayed the same page as the game Below the canvas so that the user can grasp the controls immedaitely.
+* **Immedaite** game play with Easy and simple snake play
+* **Final Score** based on each card score when all cards are played with pictures
+* **Game reset** 
 
-Technologies Used
-languages - HTML5, CSS3, JQuery, JavaScript <br>
-framework - Wireframe was done on Balsamiq  <br>
-libraries and other tools - Google fonts, PNGtree.com
+<a name="implemented"></a>
+### Future implemented features ###
 
-## Testing
+* **Feature 1** - Score keeping and saved high scores.
+* **Feature 2** - Menu and different settings
+* **Feature 3** - Change color of the snake when it reaches a highscore level
+
+<a name="technologies"></a>
+## Technologies used ##
+
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [Javascript]()
+* [JQuery](https://jquery.com/)
+
+**Tools & Libraries**
+
+* [Bootstrap](https://getbootstrap.com/)
+* [Font-Awesome](https://fontawesome.com/icons?d=gallery)
+* [Google fonts](https://fonts.google.com/)
+* [Git](https://git-scm.com/)
+* [PNGtree](https://PNGtree.com)
+
+<a name="testing"></a>
+
+## Testing ##
+---
+![Testing](assets/img/readme/responsive.png)
+
+* I tested the responsiveness of the website by using the [**Google Chrome Developer Tool**](https://developers.google.com/web/tools/chrome-devtools) as well as the plug-in **Unicorn Revealer** to control my overflow and the website [**Am I Responsive**](http://ami.responsivedesign.is/). 
+* I also tested my website on **different browsers and real devices** : **Iphone 6s, Ipad Pro 12", Ipad Mini, Google Chrome, Safari, Mozilla Firefox and Samsung A70.**
+* I used a first **dirty version** of this project on **Gitpod** and **refactored** my code **step by step** to remove any **useless classes**
+* I tested my CSS file and my HTML files using [**CSS Validator**](https://jigsaw.w3.org/css-validator/) and [**HTML Validator**](https://validator.w3.org/).
+* I tested every **functions** of my script.js using multiple **console.log** and checking for **errors** in the **Google Chrome console**.
+* I tested my Javascript files with [**JSHint**](https://jshint.com/).
+* All pages passed the HTML,CSS and JS validator final test with no major issues.
+
+**Responsiveness**
+
+* **Implementation** 
+
+* I used **Bootstrap** as well as **flexbox and custom CSS media queries** to ensure that the website didn't break on all screen sizes.
+
+**Landing Page**
+
+![Cards](assets/img/readme/gamepage.gif)
+
+* **Implementation** 
+
+* I decided to keep it simple with the **landing page and game page** as one. 
+* I liked the **key master** property better than the **on click** for the controls because I want to let the **user decide** on which control is easier. However On Click is needed to make the game touch screen sensitive and thus mobile friendly.
+* The snake canvas and controls are made only with **HTML5 and CSS3** and are **responsive** on all screen sizes.
+
+**Title**
+
+![Title](assets/img/readme/neon.gif)
+
+* **Implementation** 
+
+* As stated above, I wanted to create an classic 90's gamer feel so I used bright colors and fun fonts
+ 
+**Game Score**
+
+![Scorecard](assets/img/readme/cardscore1.jpg) 
+
+* **Implementation**
+
+* Each **apple** is linked to a **score counter** variable passed in a **function** which allows to **add up the scores per apple**
+* The **Game Score** is entirely made with **Javascript**.
+* At the **end** of each **game** a **result box** appears, stating the **card score** and giving a **gameover message** stating the **Begin new game**.
+
+<a name="issues"></a>
+## Issues ##
+---
+
+**During development**
+
+* I had a major issue with my script.js file after everything was done because of this issue:
+![Issue](assets/img/readme/issue.png)
+
+I did not understand what was going on but it stopped my javascript from working and couldn't get help so I created a second script file and copy/pasted step by step code from the first "dirty" repository I worked on. I then deleted the damaged script file, but it also deleted all my commits on that file...
+You can find the code from **the first "dirty" repository here : https://github.com/AudreyLL88/terror_v1.git**
+
+* After I put my **project** up for **peer-review**, it was brought to my attention that the **placeholder text** in the **username input** was not centered on **mobile**. I fixed it by **removing** the **short-hand padding** and simply adding **a padding-left** to the placeholder.
+* After my **mentor call** and my **peer-code-review** I realized that the code for the **game buttons** and the **final box result** was a bit **wet** so I fixed it using **arrays** and **forEach** properties.
+* I noticed towards the end of the **project** that the **card score** and the **final result** was not uploaded correctly when pressing the last **"exit"** **button** on the **last card score box**. I realized that the function I created to **reload** the game didn't take the **total score** into account and fixed it.
+
+## Deployment ##
+---
+**JustSnake** was developed on **GitPod**, using **GitHub** to host the repository and deployed on **GitHub Pages**.
+**GitHub** made the deployment extremely painless:
+
+* Connected to Github
+* Selected the repository **JustWhittaker/PRO2-JustSnake**
+* Clicked on **"settings"** in the navigation bar
+* In the **GitHub Pages** I selected **Master Branch** and **/root** in the dropdown menu and clicked **Save**
+* I waited 2 minutes.
+* **The website is now live on https://justwhittaker.github.io/PRO2-JustSnake/**.
+
+**Cloning** No issues:
+
+* In my repository **JustWhittaker/PRO2-JustSnake**, click on the **"Code** green button, **copy in clipboard the HTTPS link**, open your **IDE** and look through my files.
+* The link : **https://github.com/JustWhittaker/PRO2-JustSnake.git**
+
+<a name="credits"></a>
+## Credits ##
+---
+
+**Text Credits:**
+
+* All text content has been written by Justin Whittaker.
+
+I received inspiration and technical knowledge for this project from the following platforms
+1. Alignment <br>
+https://www.w3schools.com/tags/att_img_align.asp<br>
+https://www.w3schools.com/graphics/game_canvas.asp
+
+2. JQuery <br>
+https://stackoverflow.com/a/1527820/2124254 <br>
+https://tutorialzine.com/2015/06/making-your-first-html5-game-with-phaser<br>
+https://github.com/infusion/HTML5-Experiments/blob/master/html5-snake.html<br>
+https://www.html5canvastutorials.com/advanced/html5-canvas-snake-game/ <br>
+https://stackoverflow.com/questions/10879955/how-to-align-an-image-dead-center-with-bootstrap<br>
+https://developers.google.com/speed/libraries
+
+3. JQuery research <br>
+    1. CodeInstitute Java Funadementals - "Var","if", "Else if", "arrays" and "axis" <br>
+    2. https://www.w3schools.com/js/js_random.asp <br>
+    3. https://www.w3schools.com/tags/canvas_arc.asp
+
+4. Better Git Commit terms <br>
+http://karma-runner.github.io/5.0/dev/git-commit-msg.html
+
+5. Dependencies <br>
+    1. keymaster.js [https://github.com/madrobby/keymaster]// https://www.npmjs.com/search?q=keymaster <br>
+    2. JQuery (html js middleware) <br>
+    The project uses JQuery to simplify DOM manipulation. <br>
+    3. bootstrap 
+
+
+**Many thanks to:**
+
+* My mentor **Ignatius Ukwuoma** for his patience and kindness
+* **AudreyLL88** for her very inspiring ReadME
+* **Code Institute Slack community** for the technical and emotional support
+* **Carl Lubbe**, for all the assistance and help with guidence and UX
+
+**Site for educational purposes only!**
+
+
+ (for now)
 // Debug
 ### GITpod Debug
 ReferenceError: key is not defined
@@ -64,156 +292,5 @@ https://validator.w3.org/nu/?doc=https%3A%2F%2Fgithub.com%2FJustwhittaker%2FPRO2
 Nu Html Checker This tool is an ongoing experiment in better HTML checking, and its behavior remains subject to change
 
 Showing results for https://github.com/Justwhittaker/PRO2-JustSnake Checker Input and points of fixes and debugging noted Show sourceoutlineimage report
-
-1. Error: Attribute value not allowed on element meta at this point.
-From line 52, column 3; to line 52, column 69
-/>↩↩  ↩↩  meta name="selected-link" value="repo_source" data-pjax-transient>↩↩    
-<li> </li>
-
-2. Error: Element meta is missing one or more of the following attributes: content, property.
-From line 52, column 3; to line 52, column 69
-/>↩↩  ↩↩  meta name="selected-link" value="repo_source" data-pjax-transient>↩↩    
-<li> </li>
-
-3. Error: Bad value x-pjax-version for attribute http-equiv on element meta.
-From line 85, column 3; to line 85, column 79
-IONS">↩↩  <meta http-equiv="x-pjax-version" content="f4281e552ed2ce22b528e4c9203cf648">↩  ↩↩ 
-<li> </li>
-
-4. Warning: The banner role is unnecessary for element header.
-From line 127, column 11; to line 127, column 96
-<li> </li>
-
-5. Error: Stray end tag option.
-From line 253, column 43; to line 253, column 51
-xmp --></option></form
-<li> </li>
-
-6. Error: Stray end tag form.
-From line 253, column 52; to line 253, column 58
-></option></form><form 
-<li> </li>
-
-7. Error: Element div not allowed as child of element label in this context. (Suppressing further errors from this subtree.)
-From line 275, column 13; to line 275, column 123
-
-          <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">↩     
-
-Contexts in which element div may be used:
-Where flow content is expected.
-As a child of a dl element.
-Content model for element label:
-Phrasing content, but with no descendant labelable elements unless it is the element's labeled control, and no descendant label elements.
-
-8. Error: An element with role=option must be contained in, or owned by, an element with role=listbox.
-From line 280, column 1; to line 280, column 134
-<li> </li>
-
-9. Error: Attribute vertical_align not allowed on element svg at this point.
-From line 502, column 7; to line 502, column 165
-e">↩      svg height="16" class="octicon octicon-star v-align-text-bottom" vertical_align="text_bottom" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path 
-<li> </li>
-
-10. Error: Element div not allowed as child of element summary in this context. (Suppressing further errors from this subtree.)
-From line 687, column 9; to line 687, column 56
->↩        div class="d-flex repository-lang-stats-graph">↩     
-
-Contexts in which element div may be used:
-Where flow content is expected.
-As a child of a dl element.
-<li> </li>
-
-11. Error: Element details not allowed as child of element get-repo-controller in this context. (Suppressing further errors from this subtree.)
-From line 765, column 3; to line 765, column 124
-roller>↩  details class="position-relative details-overlay details-reset" data-action="toggle:get-repo-controller#onDetailsToggle">↩    <
-Contexts in which element details may be used:
-Where flow content is expected.
-<li> </li>
-
-12. Error: Element script must not have attribute async unless attribute src is also specified or unless attribute type is specified with value module.
-From line 1171, column 5; to line 1171, column 294
-iv>↩↩↩    script crossorigin="anonymous" async="async" integrity="sha512-WcQmT2vhcClFVOaaAJV/M+HqsJ2Gq/myvl6F…-conditional-compat" data-src="https://github.githubassets.com/assets/compat-bootstrap-59c4264f.js"></scri
-<li> </li>
-
-13. Error: Element script must not have attribute integrity unless attribute src is also specified.
-From line 1171, column 5; to line 1171, column 294
-iv>↩↩↩    script crossorigin="anonymous" async="async" integrity="sha512-WcQmT2vhcClFVOaaAJV/M+HqsJ2Gq/myvl6F…-conditional-compat" data-src="https://github.githubassets.com/assets/compat-bootstrap-59c4264f.js"></scri
-<li> </li>
-
-14. Error: Element script must not have attribute async unless attribute src is also specified or unless attribute type is specified with value module.
-From line 1178, column 7; to line 1178, column 294
-   ↩      script crossorigin="anonymous" async="async" integrity="sha512-4GcSWGoe36+BoWho4gtJcByZe8j43w+lt2/P…-module-id="./drag-drop.js" data-src="https://github.githubassets.com/assets/drag-drop-e0671258.js"></scri
-<li> </li>
-
-15. Error: Element script must not have attribute integrity unless attribute src is also specified.
-From line 1178, column 7; to line 1178, column 294
- ↩  script crossorigin="anonymous" async="async" integrity="sha512-4GcSWGoe36+BoWho4gtJcByZe8j43w+lt2/P…-module-id="./drag-drop.js" data-src="https://github.githubassets.com/assets/drag-drop-e0671258.js"></scri
-<li> </li>
-
-16. Error: Element script must not have attribute async unless attribute src is also specified or unless attribute type is specified with value module.
-From line 1179, column 7; to line 1179, column 298
-pt>↩  script crossorigin="anonymous" async="async" integrity="sha512-3Vk1NFIOm+TBUMM6pTA6DCUwwLLnc/QIT8jp…ule-id="./gist-vendor.js" data-src="https://github.githubassets.com/assets/gist-vendor-dd593534.js"></scri
-<li> </li>
-
-17. Error: Element script must not have attribute integrity unless attribute src is also specified.
-From line 1179, column 7; to line 1179, column 298
-pt>↩      script crossorigin="anonymous" async="async" integrity="sha512-3Vk1NFIOm+TBUMM6pTA6DCUwwLLnc/QIT8jp…ule-id="./gist-vendor.js" data-src="https://github.githubassets.com/assets/gist-vendor-dd593534.js"></scri
-<li> </li>
-
-18. Error: Element script must not have attribute async unless attribute src is also specified or unless attribute type is specified with value module.
-From line 1180, column 7; to line 1180, column 298
-pt>↩      script crossorigin="anonymous" async="async" integrity="sha512-iv+4yAluOjiG50ZypUBIWIUCRDo6JEBf2twv…ule-id="./randomColor.js" data-src="https://github.githubassets.com/assets/randomColor-8affb8c8.js"></scri
-<li> </li>
-
-19. Error: Element script must not have attribute integrity unless attribute src is also specified.
-From line 1180, column 7; to line 1180, column 298
-pt>↩      script crossorigin="anonymous" async="async" integrity="sha512-iv+4yAluOjiG50ZypUBIWIUCRDo6JEBf2twv…ule-id="./randomColor.js" data-src="https://github.githubassets.com/assets/randomColor-8affb8c8.js"></scri
-<li> </li>
-
-## Deployment
-
- I used Github pages in Github to control the deployment of the website you will find the deployment at 
-https://justwhittaker.github.io/PRO2-JustSnake/.
-
-## Credits
-
-### Dependencies
-
-1. keymaster.js [https://github.com/madrobby/keymaster]// https://www.npmjs.com/search?q=keymaster
-2. JQuery (html js middleware)
-    The project uses JQuery to simplify DOM manipulation.
-3. bootstrap (not used atm)
-
-Content
-JQuery research
-    1. CodeInstitute Java Funadementals - "Var","if", "Else if", "arrays" and "axis"
-    2. https://www.w3schools.com/js/js_random.asp
-    3. https://www.w3schools.com/tags/canvas_arc.asp
-
-Better Git Commit terms
-http://karma-runner.github.io/5.0/dev/git-commit-msg.html
-
-### Media
-The photos used in this site were obtained from:
-1. PNGtree.com  
-    https://pngtree.com/so/apple<br>
-    https://pngtree.com/so/snake
-
-### Acknowledgements
-
-https://fonts.google.com/specimen/Bitter?selection.family=Bitter:wght@700&sidebar.open
-
-I received inspiration and technical knowledge for this project from the following platforms
-1. Alignment
-https://www.w3schools.com/tags/att_img_align.asp<br>
-https://www.w3schools.com/graphics/game_canvas.asp
-
-2. JQuery
-// @see https://stackoverflow.com/a/1527820/2124254 <br>
-https://tutorialzine.com/2015/06/making-your-first-html5-game-with-phaser<br>
-https://github.com/infusion/HTML5-Experiments/blob/master/html5-snake.html<br>
-https://www.html5canvastutorials.com/advanced/html5-canvas-snake-game/ <br>
-https://stackoverflow.com/questions/10879955/how-to-align-an-image-dead-center-with-bootstrap<br>
-https://developers.google.com/speed/libraries
 
 
