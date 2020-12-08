@@ -4,10 +4,8 @@
 var canvas;
 var ctx;
 var snake;
-var loopIntervalId;
 
 var score = 0;
-var speed = 1;
 
 var direction = {
     NORTH: 0,
@@ -138,17 +136,14 @@ function loop() {
 
 function start() {
     newGame();
-    if (loopIntervalId) {
-        clearInterval(loopIntervalId);
-    }
-    loopIntervalId = setInterval(loop, 120/speed);
+    setInterval(loop, 120);
 }
 
 // Collision detection
 function checkWallHit() {
     var head = snake.parts[0];
     if (head.position.x < 0 || head.position.y < 0 || head.position.x == canvas.width / 10 || head.position.y == canvas.height / 10) {
-        mainMenu();
+        newGame();
     }
 }
 
@@ -157,7 +152,7 @@ function checkSnakeHit() {
     for (var i = 1; i < snake.parts.length; i++) {
         var part = snake.parts[i];
         if (head.position.x == part.position.x && head.position.y == part.position.y) {
-            mainMenu();
+            newGame();
         }
     }
 }
@@ -210,34 +205,4 @@ function drawFood() {
 
 // main
 
-function mainMenu() {
-    $('#game-panel').hide();
-    $('#button-panel').hide();
-    $('#start-panel').show();
-    $('#speed').html(speed);
-}
-
-function startGame() {
-    $('#game-panel').show();
-    $('#button-panel').show();
-    $('#start-panel').hide();
-    start();
-}
-
-function speedUp() {
-    if (speed > 2) {
-        return;
-    }
-    speed = speed + 1;
-    $('#speed').html(speed);
-}
-
-function speedDown() {
-    if (speed < 2) {
-        return;
-    }
-    speed = speed - 1;
-    $('#speed').html(speed);
-}
-
-$(document).ready(mainMenu);
+$(document).ready(start);
