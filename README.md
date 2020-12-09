@@ -103,8 +103,11 @@ For the UX on this project I wanted to create a simple and user friendly site. M
 ---
 For **wireframing** I used the tool [**Balsamiq**](https://balsamiq.com/).
 
-Please follow the link to find the preview [here] (img/readme/justsnake.pdf)
-href = https://balsamiq.cloud/s7p10rp/p3hmyt9/r2278
+Please follow the link to find the preview [here] 
+(img/snakeWireframe.png)
+(img/snakeWireframe2.png)
+
+href = https://balsamiq.cloud/srsmfvs/pilelvc/r2278
 
 * As you can see this is **a minimal wireframe** and I pushed a few changes for better readability and engagement:
 * I added **a full-screen hero image** on the game over page.
@@ -187,13 +190,13 @@ href = https://balsamiq.cloud/s7p10rp/p3hmyt9/r2278
  
 **Game Score**
 
-![Scorecard](assets/img/readme/cardscore1.jpg) 
+![Scorecard](img/landingPage.png) 
 
 * **Implementation**
 
 * Each **apple** is linked to a **score counter** variable passed in a **function** which allows to **add up the scores per apple**
 * The **Game Score** is entirely made with **Javascript**.
-* At the **end** of each **game** a **result box** appears, stating the **card score** and giving a **gameover message** stating the **Begin new game**.
+* At the **end** of each **game** a **mainMenu** appears, stating the **game score** and giving a **start message**,
 
 <a name="issues"></a>
 ## Issues ##
@@ -202,14 +205,19 @@ href = https://balsamiq.cloud/s7p10rp/p3hmyt9/r2278
 **During development**
 
 * I had a major issue with my script.js file after everything was done because of this issue:
-![Issue](assets/img/readme/issue.png)
+![Issue](img/setintervalError.png)
 
-I did not understand what was going on but it stopped my javascript from working and couldn't get help so I created a second script file and copy/pasted step by step code from the first "dirty" repository I worked on. I then deleted the damaged script file, but it also deleted all my commits on that file...
-You can find the code from **the first "dirty" repository here : 
+I did not understand what was going on but it casued my javascript loop to duplicate after refreshing and caused the game to speed up after every end of the game. To fix this issue I created an if statement to clearInterval which stopped this from happening.
 
-* After I put my **project** up for **peer-review**, it was brought to my attention that the **placeholder text** in the **username input** was not centered on **mobile**. I fixed it by **removing** the **short-hand padding** and simply adding **a padding-left** to the placeholder.
-* After my **mentor call** and my **peer-code-review** I realized that the code for the **game buttons** and the **final box result** was a bit **wet** so I fixed it using **arrays** and **forEach** properties.
-* I noticed towards the end of the **project** that the **card score** and the **final result** was not uploaded correctly when pressing the last **"exit"** **button** on the **last card score box**. I realized that the function I created to **reload** the game didn't take the **total score** into account and fixed it.
+newGame();
+    if (loopIntervalId) {
+        clearInterval(loopIntervalId);
+    }
+    loopIntervalId = setInterval(loop, 120/speed);
+}
+
+* After I put my **project** up for **peer-review**, it was brought to my attention that the **game needed a menu** was not very mobile friendly on **mobile**. I fixed it by **adding** the **mainMenu** variable and simply adding **a few buttons to toggle play** for mobile users.
+* After my **mentor call** and my **peer-code-review** I realized that I needed to add some **difficulty levels** code for the **game play** and created the **speed variable** by using **if statements** and **return** properties.
 
 ## Deployment ##
 ---
