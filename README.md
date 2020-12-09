@@ -92,10 +92,9 @@ For the UX on this project I wanted to create a simple and user friendly site. M
 
 ### Colors ###
 
-* The **color scheme** used for the website is a classic **90's gamer palette** composed of a combination of **dark and light green** for the **title** and a **classic grey** for the **buttons** on the **gaming consol** 
-
-![Color Scheme](assets/img/readme/palette.png) 
-![Inspiration](assets/img/readme/poster.jpg)
+* The **color scheme** used for the website is a classic **90's gamer palette** composed of a combination of **dark and light green** for the **title** and a **classic bright yellow** for the **buttons** on the **gaming consol** 
+ 
+![Inspiration]()
 
 <a name="wireframing"></a>
 
@@ -104,8 +103,8 @@ For the UX on this project I wanted to create a simple and user friendly site. M
 For **wireframing** I used the tool [**Balsamiq**](https://balsamiq.com/).
 
 Please follow the link to find the preview [here] 
-(img/snakeWireframe.png)
-(img/snakeWireframe2.png)
+["Wireframe"](img/snakeWireframe.png)
+["Wireframe"](img/snakeWireframe2.png)
 
 href = https://balsamiq.cloud/srsmfvs/pilelvc/r2278
 
@@ -154,7 +153,6 @@ href = https://balsamiq.cloud/srsmfvs/pilelvc/r2278
 
 ## Testing ##
 ---
-![Testing](assets/img/readme/responsive.png)
 
 * I tested the responsiveness of the website by using the [**Google Chrome Developer Tool**](https://developers.google.com/web/tools/chrome-devtools) as well as the plug-in **Unicorn Revealer** to control my overflow and the website [**Am I Responsive**](http://ami.responsivedesign.is/). 
 * I also tested my website on **different browsers and real devices** : **Iphone 6s, Ipad Pro 12", Ipad Mini, Google Chrome, Safari, Mozilla Firefox and Samsung A70.**
@@ -172,20 +170,13 @@ href = https://balsamiq.cloud/srsmfvs/pilelvc/r2278
 
 **Landing Page**
 
-![Cards](assets/img/readme/gamepage.gif)
+![landingPage](img/landingPage.png)
 
 * **Implementation** 
 
 * I decided to keep it simple with the **landing page and game page** as one. 
 * I liked the **key master** property better than the **on click** for the controls because I want to let the **user decide** on which control is easier. However On Click is needed to make the game touch screen sensitive and thus mobile friendly.
 * The snake canvas and controls are made only with **HTML5 and CSS3** and are **responsive** on all screen sizes.
-
-**Title**
-
-![Title](assets/img/readme/neon.gif)
-
-* **Implementation** 
-
 * As stated above, I wanted to create an classic 90's gamer feel so I used bright colors and fun fonts
  
 **Game Score**
