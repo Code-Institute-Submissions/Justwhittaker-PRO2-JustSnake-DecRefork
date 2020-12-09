@@ -94,7 +94,7 @@ For the UX on this project I wanted to create a simple and user friendly site. M
 
 * The **color scheme** used for the website is a classic **90's gamer palette** composed of a combination of **dark and light green** for the **title** and a **classic bright yellow** for the **buttons** on the **gaming consol** 
  
-![Inspiration]()
+![Inspiration](img/snakeExample.png)
 
 <a name="wireframing"></a>
 
@@ -103,8 +103,8 @@ For the UX on this project I wanted to create a simple and user friendly site. M
 For **wireframing** I used the tool [**Balsamiq**](https://balsamiq.com/).
 
 Please follow the link to find the preview [here] 
-["Wireframe"](img/snakeWireframe.png)
-["Wireframe"](img/snakeWireframe2.png)
+!["Wireframe"](img/snakeWireframe.png)
+!["Wireframe"](img/snakeWireframe2.png)
 
 href = https://balsamiq.cloud/srsmfvs/pilelvc/r2278
 
