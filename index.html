@@ -26,27 +26,23 @@
     <button type="button" class="btn btn-primary" onclick="speedDown()">-</button>
     <span id="speed"></span>
     <button type="button" class="btn btn-primary" onclick="speedUp()">+</button><br>
-    <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="startGame()">Start</button>
+    <button type="button" class="btn btn-success btn-lg" onclick="startGame()">Start</button>
     </div>
 
 	<canvas class="wrap" id="game-panel" width="320" height="320" tabindex="1"></canvas>
     
     <div id="button-panel">
     <div>
-		<button onclick="goNorth()">↑</button>
+		<button  class="btn btn-warning btn-lg" onclick="goNorth()">⇑</button>
 	</div>
 	<div>
-		<Button onclick="goWest()">LEFT</Button>
-		<button onclick="goEast()">RIGHT</button>
+		<Button  class="btn btn-warning btn-lg" onclick="goWest()">⇐</Button>
+		<button  class="btn btn-warning btn-lg" onclick="goEast()">⇒</button>
 	</div>
 	<div>
-		<button onclick="goSouth()">DOWN</button>
+		<button  class="btn btn-warning btn-lg" onclick="goSouth()">⇓</button>
 	</div>
     </div>
-
-	
-
-	</div>
 	<div class="instructions">
 		<p>Quick Keyboard Instructions
 			<ul>Up = W <br> Right = D <br> Down = S <br> Left = A</ul>
