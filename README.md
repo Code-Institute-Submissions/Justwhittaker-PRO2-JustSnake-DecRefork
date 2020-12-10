@@ -1,11 +1,9 @@
-# Milestone Project JavaScript/JQuery
-
-## JUST SNAKE ##
+# JUST SNAKE #
 
 ## Contents ##
 ---
 
-* UX
+* [UX](#User-Experience)
     * [Project Goals](#project-goals)
     * [User Goals](#user-goals)
     * [User Stories](#user-stories)
@@ -24,6 +22,7 @@
 * [Deployment](#deployment)
 * [Credit](#credits)
 
+<a name="User-Experience"></a>
 ## UX (User Experience) ##
 ---
 <a name="project-goals"></a>
@@ -224,6 +223,7 @@ newGame();
 
 **Cloning** No issues:
 
+* Why do we is it important to be able to clone successfully first **Collaboration** with team members if you are working in a scrum and secondly **Assist** other developers to use my main project to grow their own version.
 * In my repository **JustWhittaker/PRO2-JustSnake**, click on the **"Code** green button, **copy in clipboard the HTTPS link**, open your **IDE** and look through my files.
 * The link : **https://github.com/JustWhittaker/PRO2-JustSnake.git**
 
@@ -271,25 +271,3 @@ http://karma-runner.github.io/5.0/dev/git-commit-msg.html
 * **Carl Lubbe**, for all the assistance and help with guidence and UX
 
 **Site for educational purposes only!**
-
-
- (for now)
-// Debug
-### GITpod Debug
-ReferenceError: key is not defined
-    at Object. (/workspace/PRO2-JustSnake/game.js:28:1)
-    at Module._compile (internal/modules/cjs/loader.js:1135:14)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
-    at Module.load (internal/modules/cjs/loader.js:986:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
-    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)
-    at internal/main/run_main_module.js:17:47
-
-### Nu HTML Checker
-https://validator.w3.org/nu/?doc=https%3A%2F%2Fgithub.com%2FJustwhittaker%2FPRO2-JustSnake
-   
-Nu Html Checker This tool is an ongoing experiment in better HTML checking, and its behavior remains subject to change
-
-Showing results for https://github.com/Justwhittaker/PRO2-JustSnake Checker Input and points of fixes and debugging noted Show sourceoutlineimage report
-
-

@@ -1,6 +1,5 @@
 // game.js
-// variables
-
+// Main variables
 var canvas;
 var ctx;
 var snake;
@@ -16,7 +15,7 @@ var direction = {
     WEST: 3
 };
 
-
+// Food Variables
 var food = {
     position: {
         x: -1,
@@ -75,6 +74,7 @@ function initSnake() {
         ]
     };
 }
+
 // Reset World -- Core code from https://www.html5canvastutorials.com/advanced/html5-canvas-snake-game/
 function clearWorld() {
     ctx.beginPath();
@@ -136,18 +136,20 @@ function loop() {
     drawFood();
 }
 
+//LoopInterval render
 function start() {
     newGame();
     if (loopIntervalId) {
         clearInterval(loopIntervalId);
     }
-    loopIntervalId = setInterval(loop, 120/speed);
+    loopIntervalId = setInterval(loop, 120 / speed);
 }
 
-// Collision detection
+// Collision detection - wall and self collision
 function checkWallHit() {
     var head = snake.parts[0];
-    if (head.position.x < 0 || head.position.y < 0 || head.position.x == canvas.width / 10 || head.position.y == canvas.height / 10) {
+    if (head.position.x < 0 || head.position.y < 0 || 
+        head.position.x == canvas.width / 10 || head.position.y == canvas.height / 10) {
         mainMenu();
     }
 }
@@ -162,8 +164,7 @@ function checkSnakeHit() {
     }
 }
 
-// Snake
-
+// Snake Main
 function setSnakeDirection(direction) {
     snake.direction = direction;
 }
@@ -194,7 +195,7 @@ function moveSnake() {
     snake.parts.pop();
     snake.parts.unshift(head);
 }
-
+//Draw snake rectangles
 function drawSnake() {
     ctx.fillStyle = '#00FF00';
     for (var i = 0; i < snake.parts.length; i++) {
@@ -203,13 +204,13 @@ function drawSnake() {
     }
 }
 
+//Draw apple for food in red
 function drawFood() {
     ctx.fillStyle = 'red';
     ctx.fillRect(food.position.x * 10, food.position.y * 10, 10, 10);
 }
 
-// main
-
+// main menu hide and show start panel
 function mainMenu() {
     $('#game-panel').hide();
     $('#button-panel').hide();
@@ -224,8 +225,9 @@ function startGame() {
     start();
 }
 
+// Difficulty levels - speed up and speed down game
 function speedUp() {
-    if (speed > 2) {
+    if (speed > 4) {
         return;
     }
     speed = speed + 1;
