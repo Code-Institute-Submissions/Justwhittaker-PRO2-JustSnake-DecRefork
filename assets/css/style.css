@@ -29,7 +29,7 @@ body {
 }
 
 .logo {
-    background: url("/img/logo.png");
+    background: url("/assets/img/logo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

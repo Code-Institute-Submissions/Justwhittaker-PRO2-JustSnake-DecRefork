@@ -1,5 +1,7 @@
 # JUST SNAKE #
 
+![logo](assets/img/logo.png)
+
 ## Contents ##
 ---
 
@@ -93,7 +95,7 @@ For the UX on this project I wanted to create a simple and user friendly site. M
 
 * The **color scheme** used for the website is a classic **90's gamer palette** composed of a combination of **dark and light green** for the **title** and a **classic bright yellow** for the **buttons** on the **gaming consol** 
  
-![Inspiration](img/snakeExample.png)
+![Inspiration](assets/img/snakeExample.png)
 
 <a name="wireframing"></a>
 
@@ -102,8 +104,8 @@ For the UX on this project I wanted to create a simple and user friendly site. M
 For **wireframing** I used the tool [**Balsamiq**](https://balsamiq.com/).
 
 Please follow the link to find the preview [here] 
-!["Wireframe"](img/snakeWireframe.png)
-!["Wireframe"](img/snakeWireframe2.png)
+!["Wireframe"](assets/img/snakeWireframe.png)
+!["Wireframe"](assets/img/snakeWireframe2.png)
 
 href = https://balsamiq.cloud/srsmfvs/pilelvc/r2278
 
@@ -169,7 +171,7 @@ href = https://balsamiq.cloud/srsmfvs/pilelvc/r2278
 
 **Landing Page**
 
-![landingPage](img/landingPage.png)
+![landingPage](assets/img/landingPage.png)
 
 * **Implementation** 
 
@@ -180,7 +182,7 @@ href = https://balsamiq.cloud/srsmfvs/pilelvc/r2278
  
 **Game Score**
 
-![Scorecard](img/landingPage.png) 
+![Scorecard](assets/img/scorecard.png) 
 
 * **Implementation**
 
