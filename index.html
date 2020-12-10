@@ -15,29 +15,20 @@
 
 <body>
 	<h1 class="title">Just Snake</h1>
-	    <div class="logo"></div>
+	    <div id='logo-panel' class="logo"></div>
 	        <div id="score-panel" class="points">
 		        <label>Score :</label>
 		        <span id="score"></span>
 	    </div>
     
         <div id="start-panel" class="title">
-            <h1>Welcome</h1>
+            <h1 id="titleHeader"></h1>
                 <label><h1>Speed</h1></label>
                     <button type="button" class="btn btn-primary" id="minus">-</button>
                     <span id="speed"></span>
                     <button type="button" class="btn btn-primary" id="plus">+</button><br>
-                    <button type="button" class="btn btn-success btn-lg" onclick="startGame()">Start</button>
-        </div>
-
-        <div id="end-panel" class="endTitle">
-            <h1>Game Over</h1>
-            <h2>TRY AGAIN</h2>
-                <label class="title"><h1>Speed</h1></label>
-                <button type="button" class="btn btn-primary" id="minus">-</button>
-                    <span id="speed"></span>
-                <button type="button" class="btn btn-primary" id="plus">+</button><br>
-                <button type="button" class="btn btn-danger btn-lg" onclick="startGame()">ReStart</button>
+                    <button type="button" class="btn btn-success btn-lg" onclick="startGame()"><h1>Start the Game</h1></button>
+                    <button type="button" id="myBtn" class="btn btn-info"><h1>How to play</h1></button>
         </div>
 
 	<canvas class="wrap" id="game-panel" width="320" height="320" tabindex="1"></canvas>
@@ -56,35 +47,21 @@
 		    <button  class="btn btn-warning btn-lg" onclick="goSouth()">⇓</button>
 	    </div>
         </div>
-            &nbsp;
 
-    <!-- Trigger the modal with a button -->
-        <button type="button" class="btn btn-success btn-lg instructionTitle" data-toggle="modal" data-target="#myModal">
-            <h1>How to play</h1></button>
-        <div id="modal" class="modal fade" role="dialog">
-  
-    <!-- Modal -->
-        <div class="modal-dialog">
+<!-- The Modal -->
+<div id="myModal" class="modal">
 
-    <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">How to play</h4>
-            </div>
-        <div class="modal-body">
-                <p>Move the snake to eat as many apples as you can<br>
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close"></span>
+    <p>Move the snake to eat as many apples as you can<br>
                     Grow your snake when you eat apples</p>
 		        <ul>Quick Keyboard Instructions
 			        <br>Up = W <br> Right = D <br> Down = S <br> Left = A</ul>
-			        <ul>Caution Watch out for the walls and dont step on your own tail  !!</ul>
-		        </p>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-        </div>
+			        <ul>Caution Watch out for the walls and dont step on your own tail  !!</ul></p>
+  </div>
 
+</div>
     </div>
     </div>
 </div>
@@ -97,3 +74,4 @@
 </body>
 
 </html>
+

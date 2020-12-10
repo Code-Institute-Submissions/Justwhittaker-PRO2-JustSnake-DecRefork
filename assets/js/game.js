@@ -5,6 +5,7 @@ var ctx;
 var snake;
 var loopIntervalId;
 
+
 var score = 0;
 var speed = 1;
 
@@ -212,29 +213,32 @@ function drawFood() {
 
 // mainMenu, endMenu hide and show start-panel
 function mainMenu() {
+    $('#logo-panel').show();
     $('#game-panel').hide();
     $('#button-panel').hide();
     $('#start-panel').show();
     $('#speed').html(speed);
+    $('#titleHeader').html('Welcome');
     $('#score-panel').hide();
-    $('#end-panel').hide();
+    
 }
 
 function startGame() {
+    $('#logo-panel').hide();
     $('#game-panel').show();
     $('#button-panel').show();
     $('#start-panel').hide();
     $('#score-panel').show();
-    $('#end-panel').hide();
     start();
 }
 
 function endMenu() {
+    $('#logo-panel').show();
     $('#game-panel').hide();
     $('#button-panel').hide();
-    $('#end-panel').show();
-    $('#start-panel').hide();
+    $('#start-panel').show();
     $('#speed').html(speed);
+    $('#titleHeader').html('Game Over').css('color', 'red');
     $('#score-panel').show();
 }
 
@@ -263,5 +267,31 @@ $('#minus').click(function () {
 $('#plus').click(function () {
     speedUp()
 });
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 $(document).ready(mainMenu);
