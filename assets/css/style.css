@@ -74,17 +74,17 @@ body {
 .modalInstructions {    
     font: bold;
     color: darkblue;
-    border: 15px solid green;
     padding: 50px;
     margin: 20px;
     height: 100%;
     margin: 0;
     padding: 0;
     font-size: 20px;
+    text-align: left;
     font-family: "Dokdo", Arial, Helvetica, sans-serif;
 }
 
-/* The Modal (background) */
+/* The Modal (background) -- Core code https://www.w3schools.com/howto/howto_css_modals.asp*/
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -100,10 +100,11 @@ body {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: yellow;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
+  max-width: 400px;
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
