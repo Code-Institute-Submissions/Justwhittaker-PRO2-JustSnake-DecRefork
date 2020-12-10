@@ -16,7 +16,7 @@
 <body>
 	<h1 class="title">Just Snake</h1>
 	<div class="logo"></div>
-	<div class="points">
+	<div id="score-panel" class="points">
 		<label>Score :</label>
 		<span id="score"></span>
 	</div>
@@ -24,9 +24,9 @@
     <div id="start-panel" class="title">
         <h1>Welcome</h1>
         <label><h1>Speed</h1></label>
-            <button type="button" class="btn btn-primary" onclick="speedDown()">-</button>
+            <button type="button" class="btn btn-primary" id="minus">-</button>
             <span id="speed"></span>
-            <button type="button" class="btn btn-primary" onclick="speedUp()">+</button><br>
+            <button type="button" class="btn btn-primary" id="plus">+</button><br>
             <button type="button" class="btn btn-success btn-lg" onclick="startGame()">Start</button>
     </div>
 
@@ -38,6 +38,7 @@
 	</div>
 	<div>
 		<Button  class="btn btn-warning btn-lg" onclick="goWest()">⇐</Button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<button  class="btn btn-warning btn-lg" onclick="goEast()">⇒</button>
 	</div>
 	<div>

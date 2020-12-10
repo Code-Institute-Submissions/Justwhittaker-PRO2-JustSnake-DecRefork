@@ -148,7 +148,7 @@ function start() {
 // Collision detection - wall and self collision
 function checkWallHit() {
     var head = snake.parts[0];
-    if (head.position.x < 0 || head.position.y < 0 || 
+    if (head.position.x < 0 || head.position.y < 0 ||
         head.position.x == canvas.width / 10 || head.position.y == canvas.height / 10) {
         mainMenu();
     }
@@ -216,18 +216,20 @@ function mainMenu() {
     $('#button-panel').hide();
     $('#start-panel').show();
     $('#speed').html(speed);
+    $('#score-panel').hide();
 }
 
 function startGame() {
     $('#game-panel').show();
     $('#button-panel').show();
     $('#start-panel').hide();
+    $('#score-panel').show();
     start();
 }
 
 // Difficulty levels - speed up and speed down game
 function speedUp() {
-    if (speed > 4) {
+    if (speed > 2) {
         return;
     }
     speed = speed + 1;
@@ -241,5 +243,14 @@ function speedDown() {
     speed = speed - 1;
     $('#speed').html(speed);
 }
+
+//event listeners for the speed
+$('#minus').click(function () {
+    speedDown()
+});
+
+$('#plus').click(function () {
+    speedUp()
+});
 
 $(document).ready(mainMenu);
