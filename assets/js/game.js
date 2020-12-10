@@ -226,7 +226,6 @@ function startGame() {
     $('#start-panel').hide();
     $('#score-panel').show();
     $('#end-panel').hide();
-    $('#model').hide();
     start();
 }
 
@@ -237,7 +236,6 @@ function endMenu() {
     $('#start-panel').hide();
     $('#speed').html(speed);
     $('#score-panel').show();
-    $('#model').hide();
 }
 
 // Difficulty levels - speed up and speed down game

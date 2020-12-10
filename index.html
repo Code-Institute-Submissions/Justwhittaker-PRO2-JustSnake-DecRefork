@@ -9,92 +9,91 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		type="text/css" />
 	<link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
-    <link rel="icon" type="image/png" href="./assets/img/logo.png"/>
+    <link rel="icon" type="image/png" href="/assets/img/logo.png"/>
 	<title>Just Snake</title>
 </head>
 
 <body>
 	<h1 class="title">Just Snake</h1>
-	<div class="logo"></div>
-	<div id="score-panel" class="points">
-		<label>Score :</label>
-		<span id="score"></span>
-	</div>
+	    <div class="logo"></div>
+	        <div id="score-panel" class="points">
+		        <label>Score :</label>
+		        <span id="score"></span>
+	    </div>
     
-    <div id="start-panel" class="title">
-        <h1>Welcome</h1>
-        <label><h1>Speed</h1></label>
-            <button type="button" class="btn btn-primary" id="minus">-</button>
-            <span id="speed"></span>
-            <button type="button" class="btn btn-primary" id="plus">+</button><br>
-            <button type="button" class="btn btn-success btn-lg" onclick="startGame()">Start</button>
-    </div>
+        <div id="start-panel" class="title">
+            <h1>Welcome</h1>
+                <label><h1>Speed</h1></label>
+                    <button type="button" class="btn btn-primary" id="minus">-</button>
+                    <span id="speed"></span>
+                    <button type="button" class="btn btn-primary" id="plus">+</button><br>
+                    <button type="button" class="btn btn-success btn-lg" onclick="startGame()">Start</button>
+        </div>
 
-    <div id="end-panel" class="endTitle">
-        <h1>Game Over</h1>
-        <h2>TRY AGAIN</h2>
-        <label class="title"><h1>Speed</h1></label>
-            <button type="button" class="btn btn-primary" id="minus">-</button>
-            <span id="speed"></span>
-            <button type="button" class="btn btn-primary" id="plus">+</button><br>
-            <button type="button" class="btn btn-success btn-lg" onclick="startGame()">ReStart</button>
-    </div>
+        <div id="end-panel" class="endTitle">
+            <h1>Game Over</h1>
+            <h2>TRY AGAIN</h2>
+                <label class="title"><h1>Speed</h1></label>
+                <button type="button" class="btn btn-primary" id="minus">-</button>
+                    <span id="speed"></span>
+                <button type="button" class="btn btn-primary" id="plus">+</button><br>
+                <button type="button" class="btn btn-danger btn-lg" onclick="startGame()">ReStart</button>
+        </div>
 
 	<canvas class="wrap" id="game-panel" width="320" height="320" tabindex="1"></canvas>
     
     <!-- mobile or touch screen game play -->
-    <div id="button-panel">
-    <div>
-		<button  class="btn btn-warning btn-lg" onclick="goNorth()">⇑</button>
-	</div>
-	<div>
-		<Button  class="btn btn-warning btn-lg" onclick="goWest()">⇐</Button>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<button  class="btn btn-warning btn-lg" onclick="goEast()">⇒</button>
-	</div>
-	<div>
-		<button  class="btn btn-warning btn-lg" onclick="goSouth()">⇓</button>
-	</div>
-    </div>
-    &nbsp;
+        <div id="button-panel">
+        <div>
+		    <button  class="btn btn-warning btn-lg" onclick="goNorth()">⇑</button>
+	    </div>
+	    <div>
+		    <Button  class="btn btn-warning btn-lg" onclick="goWest()">⇐</Button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		    <button  class="btn btn-warning btn-lg" onclick="goEast()">⇒</button>
+	    </div>
+	    <div>
+		    <button  class="btn btn-warning btn-lg" onclick="goSouth()">⇓</button>
+	    </div>
+        </div>
+            &nbsp;
+
     <!-- Trigger the modal with a button -->
-    <button type="button" class="btn btn-success btn-lg instructionTitle" data-toggle="modal" data-target="#myModal">
-    <h1>How to play</h1></button>
-    <div id="myModal" class="modal fade" role="dialog">
+        <button type="button" class="btn btn-success btn-lg instructionTitle" data-toggle="modal" data-target="#myModal">
+            <h1>How to play</h1></button>
+        <div id="modal" class="modal fade" role="dialog">
   
     <!-- Modal -->
-    <div class="modal-dialog">
+        <div class="modal-dialog">
 
     <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">How to play</h4>
-      </div>
-      <div class="modal-body">
-        <p>Move the snake to eat as many apples as you can<br>
-        Grow your snake when you eat apples</p>
-		<ul>Quick Keyboard Instructions
-			<br>Up = W <br> Right = D <br> Down = S <br> Left = A</ul>
-			<ul>Caution Watch out for the walls and dont step on your own tail  !!</ul>
-		</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">How to play</h4>
+            </div>
+        <div class="modal-body">
+                <p>Move the snake to eat as many apples as you can<br>
+                    Grow your snake when you eat apples</p>
+		        <ul>Quick Keyboard Instructions
+			        <br>Up = W <br> Right = D <br> Down = S <br> Left = A</ul>
+			        <ul>Caution Watch out for the walls and dont step on your own tail  !!</ul>
+		        </p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
 
-  </div>
+    </div>
+    </div>
 </div>
-
-
-        
-    </div>
-	</div>
+</div>
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
 		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/keymaster@1.6.2/keymaster.js"></script>
 	<script src="./assets/js/game.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
