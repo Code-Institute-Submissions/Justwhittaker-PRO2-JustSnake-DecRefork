@@ -36,7 +36,7 @@ The **goal** for this project is to to recreate the poplular game for everyone t
 <a name="user-goals"></a>
 ### User Goals ###
 
-For the UX on this project I wanted to create a simple and user friendly site. My target audience is all ages, hence I chose vibarant colors.<br>
+For the UX on this project I wanted to create a simple and user friendly site. My target audience is children and young adults, hence I chose vibarant colors.<br>
 
 * **Testing his/her/their Skills** with **quick reflexes** within the **Boundry**
 * **Being entertained** by the game.
@@ -48,7 +48,7 @@ For the UX on this project I wanted to create a simple and user friendly site. M
 ### User Stories ### 
 
 * The **user** wants an **attractive game** witha **non-distracting** background.
-* The **user** wants **clear instructions**
+* The **user** wants to see **clear instructions** on how to play the game
 * The **user** wants there to be a **score column** so that the user can quickly identify there current score, this **resets** when a new game starts.
 * The **user** wants to be **challenged** in his/her/their **skills**
 * The **user** wants a **conveint sized canvas box** 
