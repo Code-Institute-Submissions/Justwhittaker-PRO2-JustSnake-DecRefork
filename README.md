@@ -1,6 +1,6 @@
 # JUST SNAKE #
 
-![logo](assets/img/logo.png)
+![logo](assets/img/snake.png)
 
 ## Contents ##
 ---

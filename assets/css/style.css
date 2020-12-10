@@ -18,6 +18,16 @@ body {
     font-size: 60px;
 }
 
+.endTitle {
+    font: bold;
+    color: red;
+    height: 100%;
+    margin-top: 40px;
+    padding: 0;
+    font-family: "Dokdo", Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+
 .points {
     font: bold;
     color: #00FF00;
@@ -49,9 +59,24 @@ body {
     height: 5px;
 }
 
-.instructions {    
+.instructionTitle {    
     font: bold;
-    color: yellow;
+    color: darkblue;
+    padding: 50px;
+    margin: 20px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: "Dokdo", Arial, Helvetica, sans-serif;
+}
+
+.modalInstructions {    
+    font: bold;
+    color: darkblue;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
     height: 100%;
     margin: 0;
     padding: 0;

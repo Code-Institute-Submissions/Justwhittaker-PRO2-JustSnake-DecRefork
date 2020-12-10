@@ -150,7 +150,7 @@ function checkWallHit() {
     var head = snake.parts[0];
     if (head.position.x < 0 || head.position.y < 0 ||
         head.position.x == canvas.width / 10 || head.position.y == canvas.height / 10) {
-        mainMenu();
+        endMenu();
     }
 }
 
@@ -159,7 +159,7 @@ function checkSnakeHit() {
     for (var i = 1; i < snake.parts.length; i++) {
         var part = snake.parts[i];
         if (head.position.x == part.position.x && head.position.y == part.position.y) {
-            mainMenu();
+            endMenu();
         }
     }
 }
@@ -210,13 +210,14 @@ function drawFood() {
     ctx.fillRect(food.position.x * 10, food.position.y * 10, 10, 10);
 }
 
-// main menu hide and show start panel
+// mainMenu, endMenu hide and show start-panel
 function mainMenu() {
     $('#game-panel').hide();
     $('#button-panel').hide();
     $('#start-panel').show();
     $('#speed').html(speed);
     $('#score-panel').hide();
+    $('#end-panel').hide();
 }
 
 function startGame() {
@@ -224,7 +225,19 @@ function startGame() {
     $('#button-panel').show();
     $('#start-panel').hide();
     $('#score-panel').show();
+    $('#end-panel').hide();
+    $('#model').hide();
     start();
+}
+
+function endMenu() {
+    $('#game-panel').hide();
+    $('#button-panel').hide();
+    $('#end-panel').show();
+    $('#start-panel').hide();
+    $('#speed').html(speed);
+    $('#score-panel').show();
+    $('#model').hide();
 }
 
 // Difficulty levels - speed up and speed down game
